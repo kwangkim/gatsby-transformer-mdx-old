@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-transformer-mdx",
+  "version": "1.0.1",
+  "description": "mdx transformer for gatsby",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore __tests__",
+    "prepublish": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore __tests__"
+  },
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "markdown",
+    "mdx",
+    "jsx"
+  ],
+  "author": "Kwang Hyun Kim",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby-remark-katex": "^1.0.14"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "cross-env": "^5.2.0"
+  },
+  "peerDependencies": {
+    "@mdx-js/loader": "^0.13.1-1",
+    "@mdx-js/mdx": "^0.13.1-1",
+    "gatsby": "^1.9.273"
+  }
+}
