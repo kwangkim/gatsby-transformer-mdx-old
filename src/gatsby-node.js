@@ -13,12 +13,15 @@ exports.modifyWebpackConfig = ({ config, stage }) => {
                     babelrc: false
                 }
             },
-            {
-                loader: '@mdx-js/loader',
-                options:{
-                    mdPlugins: ['gatsby-remark-katex']
-                }
-            },
+            '@mdx-js/loader'
         ]
     });
 };
+/*
+{
+    loader: '@mdx-js/loader',
+    options:{
+        mdPlugins: ['gatsby-remark-katex']
+    }
+},
+*/
